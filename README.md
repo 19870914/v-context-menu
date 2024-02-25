@@ -40,7 +40,7 @@ import {
   unregisterContextMenu, 
   clearContextMenu,
   //ContextMenu
-} from 'v-context-menu'
+} from '@/static/js/v-context-menu/v-context-menu.js'
 
 const divRef = ref(null)
 const contenxtmenuVisible = ref(false)
@@ -57,10 +57,24 @@ const menus = [
       name: '新建', 
       code: 'new', 
       children: [
-        [...new Array(10).fill(null).map((item,index) => ({ 
-          name: `文件夹${index}`, 
-          code: `folder${index}` 
-        }))]
+        [
+          ...new Array(10).fill(null).map((item,index) => ({
+            name: `文件夹${index}`, 
+            code: `folder${index}` 
+          })),
+          { 
+            name: '菜单', 
+            code: 'menu', 
+            children: [
+              [
+                ...new Array(10).fill(null).map((item,index) => ({
+                  name: `菜单${index}`, 
+                  code: `menu${index}` 
+                }))
+              ]
+            ]
+          },
+        ]
       ]
     }
   ]
@@ -88,7 +102,7 @@ const options = {
 }
 
 function callback(item) {
-  cosnole.log(item)
+  console.log(item)
 }
 
 function onDivContextMenu(e) {
@@ -101,7 +115,7 @@ function onDivContextMenu(e) {
   contenxtmenuVisible.value = true
 }
 function onContextMenuItemClick(item) {
-  cosnole.log(item)
+  console.log(item)
   closeContextMenu()  
 }
 
@@ -132,16 +146,15 @@ onUnmounted(() => {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+  padding: 50px;
   margin: 50px auto;
   width: 500px;
-  height: 300px;
   background: #eee;
 }
 .demo-view {
   width: 100px;
   height: 100px;
-  background: #f00;
 }
 
 .custom-contextmenu {
