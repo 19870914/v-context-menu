@@ -40,11 +40,11 @@ export default defineConfig({
         banner: BANNER,
       },      
       plugins: [
-        terser({
-          compress: {
-            drop_console: true,
-          },
-        })
+        // terser({
+        //   compress: {
+        //     drop_console: true,
+        //   },
+        // })
       ], 
     },
   },
