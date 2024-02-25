@@ -16,7 +16,7 @@ app.use(VContextMenu)
 app.mount('#app')
 ```
 
-```js
+```vue
 <template>
   <div class="demo-container" v-context-menu="{ menus, callback }">
     <div class="demo-view" style="background: #f66;" v-context-menu="{ menus: menus2, callback, options }"></div>
