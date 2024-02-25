@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, onMounted, nextTick } from 'vue'
 import MenuList from './menu-list.vue'
 import { m_offset } from './properties'
 import { useViewport } from '@/utils/use-viewport'
