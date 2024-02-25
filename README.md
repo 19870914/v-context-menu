@@ -2,13 +2,13 @@
 
 ## Installation
 ```bash
-npm i v-context-menu
+npm i @yyyymmddhhmmss/v-context-menu
 ```
 
 ## Usage
 ```javascript
-import VContextMenu from 'v-context-menu'
-import 'v-context-menu/style.css'
+import VContextMenu from '@yyyymmddhhmmss/v-context-menu'
+import '@yyyymmddhhmmss/v-context-menu/style.css'
 
 const app = createApp(App)
 app.use(VContextMenu)

@@ -1,5 +1,5 @@
 {
-  "name": "v-context-menu",
+  "name": "@yyyymmddhhmmss/v-context-menu",
   "version": "0.1.0",
   "description": "vue3 contextmenu",
   "type": "module",
