@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-//import { terser } from 'rollup-plugin-terser'
+import { terser } from 'rollup-plugin-terser'
 //import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 const BANNER = `
@@ -39,13 +39,13 @@ export default defineConfig({
         },
         banner: BANNER,
       },      
-      // plugins: [
-      //   terser({
-      //     compress: {
-      //       // drop_console: true,
-      //     },
-      //   })
-      // ], 
+      plugins: [
+        terser({
+          compress: {
+            drop_console: true,
+          },
+        })
+      ], 
     },
   },
 })
