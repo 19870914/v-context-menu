@@ -31,7 +31,7 @@ const ns = useNamespace('v-context-menu')
 const props = defineProps({
   x: {
     type: Number,
-    default: 
+    default: 0
   },
   y: {
     type: Number,
