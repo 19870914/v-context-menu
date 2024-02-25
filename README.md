@@ -6,7 +6,7 @@ npm i @yyyymmddhhmmss/v-context-menu
 ```
 
 ## Usage
-```javascript
+```js
 import VContextMenu from '@yyyymmddhhmmss/v-context-menu'
 import '@yyyymmddhhmmss/v-context-menu/dist/style.css'
 
@@ -16,7 +16,7 @@ app.use(VContextMenu)
 app.mount('#app')
 ```
 
-```
+```js
 <template>
   <div class="demo-container" v-context-menu="{ menus, callback }">
     <div class="demo-view" style="background: #f66;" v-context-menu="{ menus: menus2, callback, options }"></div>
