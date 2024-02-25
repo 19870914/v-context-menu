@@ -40,7 +40,7 @@ import {
   unregisterContextMenu, 
   clearContextMenu,
   //ContextMenu
-} from '@/static/js/v-context-menu/v-context-menu.js'
+} from '@yyyymmddhhmmss/v-context-menu'
 
 const divRef = ref(null)
 const contenxtmenuVisible = ref(false)
