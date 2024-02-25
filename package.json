@@ -25,5 +25,9 @@
     "contextmenu",
     "rightmenu",
     "vue3"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/19870914/v-context-menu.git"
+  }
 }
